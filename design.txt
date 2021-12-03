@@ -2,19 +2,24 @@
 
 2. Description: An _app_ that gets as input the _amount_ of a _bill_ for a particular period and the days
 that each of the flatmates stayed in the house for that period and returns how much each flatmate
-has to pay. It also generates a pdf reprot stating the names of the flatmates, the period, and how much
+has to pay. It also generates a pdf report stating the names of the flatmates, the period, and how much
 each of them had to pay.
 
 3. Objects:
-How to find objects? Look at the description. Each noun should be an object (= class) :)
-
 Bill:
     amount
     period
-
 Flatmate:
+    name
     days_in_house
+    pays(bill)
+PdfReport:
+    filename
+    generate(flatmate1, flatmate2, bill)
 
+
+
+How to find objects? Look at the description. Each noun should be an object (= class) :)
 ___
 example for that
 class Bill:
